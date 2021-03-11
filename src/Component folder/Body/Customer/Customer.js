@@ -1,14 +1,19 @@
 import React, { Component } from 'react'
-import NewCustomerEntry from'./NewCustomerEntry'
-import {NavLink,Route,Switch,Redirect} from 'react-router-dom'
+
+import {NavLink} from 'react-router-dom'
 
 class Customer extends Component {
     render(){
-        let customerlist= null
         return(
-            <div className='container'>
-                <NewCustomerEntry />
+            <div className='customer'>
+                    <div className='container'>
+                        <ul>
+                            <li><NavLink to='/customer-list'>গ্রাহকের তালিকা</NavLink></li>
+                            <li> <NavLink to='/addcustomer'>নতুন গ্রাহক যুক্ত করুন</NavLink></li>
+                        </ul>
+                    </div>
             </div>
+            
         )
     }
 }

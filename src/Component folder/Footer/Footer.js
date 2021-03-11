@@ -5,8 +5,14 @@ class Footer extends Component {
 
     render(){
         return(
-            <div>
-
+            <div className='footer'>
+                <div className='container'>
+                    <div className='row justify-content-center'>
+                        <div className='col-auto'>
+                            <p>Roni Treders &copy;Copyright 2021</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import {Collapse, Navbar, NavbarBrand, NavbarToggler, Nav, NavItem, NavLink} from 'reactstrap';
+import {Collapse, Navbar, NavbarBrand, NavbarToggler, Nav, NavItem} from 'reactstrap';
+import {NavLink} from 'react-router-dom'
+
 
 class Navigation extends Component {
-
     constructor(){
         super();
         this.state={
@@ -26,30 +27,36 @@ class Navigation extends Component {
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isToggle} navbar>
                             <Nav className="ml-auto" navbar>
-                                <NavItem>
-                                    <NavLink  href="/home">হোম</NavLink>
-                                </NavItem>
-
-                                <NavItem>
-                                    <NavLink href="/customer">গ্রাহক তালিকা</NavLink>
-                                </NavItem>
-
-                                <NavItem>
-                                    <NavLink href="/tali-khata">টালি খাতা</NavLink>
-                                </NavItem>
-
-                                <NavItem>
-                                    <NavLink href="/cash-memo">ক্যাশ মেমো</NavLink>
-                                </NavItem>
-
-                                <NavItem>
-                                    <NavLink href="/goods-list">পণ্য তালিকা</NavLink>
-                                </NavItem>
-
-                                <NavItem>
-                                    <NavLink href="/log-in">Log In</NavLink>
-                                </NavItem>
-
+                                <li>
+                                    <NavItem>
+                                        <NavLink  to="/home">হোম</NavLink>
+                                    </NavItem>
+                                </li>                                
+                                <li>
+                                    <NavItem>
+                                            <NavLink to="/customer">গ্রাহক</NavLink>
+                                    </NavItem>
+                                </li>
+                                <li>
+                                    <NavItem>
+                                        <NavLink to="/tali-khata">টালি খাতা</NavLink>
+                                    </NavItem>
+                                </li>
+                                <li>
+                                    <NavItem>
+                                        <NavLink to="/cash-memo">ক্যাশ মেমো</NavLink>
+                                    </NavItem>
+                                </li>
+                                <li>
+                                    <NavItem>
+                                        <NavLink to="/goods-list">পণ্য তালিকা</NavLink>
+                                    </NavItem>
+                                </li>
+                                <li>
+                                    <NavItem>
+                                        <NavLink to="/log-in">Log In</NavLink>
+                                    </NavItem>
+                                </li>
                             </Nav>
                         </Collapse>
                     

@@ -1,20 +1,34 @@
 .App {
   text-align: center;
 }
-.customer_form a:hover a:active a.active{
-  color:#ffffff;
-  font-weight:bold;
-}
-.customerbar li{
-  display:inline-block;
-  margin: 10px;
-  border-radius: 5%;}
-.customerbar li a:hover a:active a.active{
-  background:#ccc;
-  font-weight: 700;
-  color:coral;
-}
-.customerbar li a{
+.customer li a{
+  color: #021214;
   text-decoration: none;
-  color:black;
+}
+.customer li{
+  display: inline-block;
+  margin: 10px;
+  padding: 10px
+}
+.customer_form li a{
+  color: #aaaaaa;
+  text-decoration: none;
+}
+.customer_form li{
+  display: inline-block;
+  margin: 5px;
+}
+.customer_form li a:hover{
+  color:#ffffff ;
+}
+.footer {
+  position:fixed;
+  bottom:0;
+  background-color: rgb(241, 213, 207);
+  width:100%;
+  color: #000000;
+}
+.footer p{
+  margin:10px;
+  padding: 10px;
 }
