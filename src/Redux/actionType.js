@@ -1,0 +1,1 @@
+export const Loadcustomer="LOAD_CUSTOMER"
