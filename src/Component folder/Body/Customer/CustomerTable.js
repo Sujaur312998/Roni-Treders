@@ -21,15 +21,16 @@ class CustomerTable extends Component {
                         {
                             this.props.customer.map((customers, index) => {
                                 //console.log(customers);
-                                return(<tr key={index}>
-                                    <td> {index+1} </td>
-                                    <td> {customers.customer_name} </td>
-                                    <td> {customers.customer_FatherName} </td>
-                                    <td> {customers.Phone_No} </td>
-                                    <td> {customers.NID}</td>
-                                    <td> {customers.village}</td>
-                                </tr>)
-                                
+                                return (
+                                    <tr key={index}>
+                                        <td> {index + 1} </td>
+                                        <td> {customers.customer_name} </td>
+                                        <td> {customers.customer_FatherName} </td>
+                                        <td> {customers.Phone_No} </td>
+                                        <td> {customers.NID}</td>
+                                        <td> {customers.village}</td>
+                                    </tr>)
+
                             })
                         }
 

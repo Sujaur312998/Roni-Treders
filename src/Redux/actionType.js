@@ -1,1 +1,1 @@
-export const Loadcustomer="LOAD_CUSTOMER"
+export const AddCustomer="ADD_CUSTOMER"

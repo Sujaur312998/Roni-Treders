@@ -2,6 +2,7 @@ export const customer={
     "customer": [
         {
             "id": 0,
+            "customerID":0,
             "customer_name": "Md Lutfor Rahman",
             "customer_nickName": "Lutfor",
             "customer_FatherName": "Bodiruddin",
@@ -12,6 +13,7 @@ export const customer={
         },
         {
             "id": 1,
+            "customerID":1,
             "customer_name": "Md Sujaur Rahman",
             "customer_nickName": "Suja",
             "customer_FatherName": "Lutfor",
@@ -22,6 +24,7 @@ export const customer={
         },
         {
             "id": 2,
+            "customerID":2,
             "customer_name": "Md Saifur Rahman",
             "customer_nickName": "Roni",
             "customer_FatherName": "Lutfor",
